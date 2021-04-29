@@ -11,6 +11,8 @@
 </head>
 <body>
     <h1>WELLCOME!</h1>
+    <button onclick="printName()">Click Here</button>
+    <h3 id="nameofthelegent"></h3>
     <br>
     <br>
     <form>
@@ -26,5 +28,16 @@
     <option value="audi">Audi</option>
   </select>
 </form>
+
+
+<script>
+  function printName(){
+    var name = prompt("Enter your name:");  
+    if(name != null)
+    {
+    document.getElementById("nameofthelegent").innerText = "hey "+ name +", you are the best!";
+    }
+  }
+</script>
 </body>
 </html>
