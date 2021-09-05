@@ -10,7 +10,9 @@
 
 <body>
     <h1>WELLCOME!</h1>
-    <button onclick="printName()">Click Here</button>
+    <button onclick="printName()">open prompt</button>
+    <button onclick ="openAlert()">open alert</button>
+    <button onclick="openConfirm()">open confirm</button>
     <h3 id="nameofthelegent"></h3>
     <br>
     <br>
@@ -60,6 +62,14 @@
             if (name != null) {
                 document.getElementById("nameofthelegent").innerText = "hey " + name + ", you are the best!";
             }
+        }
+
+        function openAlert(){
+            alert("this is a alert message!!");
+        }
+
+        function openConfirm(){
+            confirm("this is a confirm message!! do you confirm??");
         }
     </script>
 </body>
